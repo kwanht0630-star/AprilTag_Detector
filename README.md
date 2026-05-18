@@ -1,2 +1,2 @@
-# AprilTag_Detector
+# AprilTag Detector
 This is my internship project which based on discovering AprilTag.
