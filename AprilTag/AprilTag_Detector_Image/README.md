@@ -43,3 +43,25 @@ tagFamily = 'tag36h11';
 ```
 
 Note: If the script fails to detect your tag, ensure your workspace has adequate lighting or try adjusting the parameters within the `imadjust` function to further manipulate the contrast thresholds.
+
+## 🖼️ The Expected Output Window
+<img width="1046" height="1030" alt="image" src="https://github.com/user-attachments/assets/6b2e6271-3828-4af6-841d-57ee32f5f2ef" />
+
+When the script finishes analyzing the cardboard and 3D-printed tag, a single MATLAB figure window titled "AprilTag Detector Results" will pop up. It will look like this:
+
+The Background: The original, unedited, full-color AprilTag_Sample.jpg photo of your cardboard setup. 
+(The grayscale and contrast-adjusted versions are only used mathematically in the background; they are not displayed to the user).
+
+**The Top Banner (Green Text):**
+
+Hovering at the very top center of the image (at 5% of the image height), you will see: Success! Found 1 Tag(s)
+
+**The Bounding Box:**
+
+There will be a thick, solid green box drawn directly over the border of the 3D-printed black plastic where it meets the cardboard. The box connects the four detected corners of the tag perfectly.
+
+**The Bottom Banner (Blue Text):**
+
+Hovering at the very bottom center of the image (at 95% of the image height), you will see the specific ID number that MATLAB decoded from your cardboard pattern:
+
+**Detected Tag ID(s): [ID Number]**
