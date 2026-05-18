@@ -40,3 +40,39 @@ The bounding boxes and text labels cycle through a predefined set of HEX colors.
 ```
 colors = {'#D95319', '#FF33F6', '#EDB120', '#4DBEEE', '#77AC30', '#FFFFFF'};
 ```
+
+## 🖼️ The Expected Output Window
+
+When you run the script, a single MATLAB figure window titled "Live AprilTag Scanner" will open. Here is exactly what you will see:
+
+**The Background:**
+
+https://github.com/user-attachments/assets/4ed5051c-0b01-4219-83f0-1b9417867718
+
+  A live, continuous, full-color video feed from your default computer webcam.
+
+**The Top Banner (Status Bar):**
+
+  Hovering at the top center, there will be a dark grey text box with bright green text. It updates in real-time.
+
+  If no tag is in the camera view: The box turns red and says: Scanning for tags...
+
+  When you hold up a tag: The box turns green and says: Success! Found 1 Tag(s)
+
+**The Bounding Box (Color Cycling):**
+
+  As soon as a tag enters the frame, a thick, brightly colored box will snap to the borders of the tag and follow it as you move it around. If you hold up multiple tags, each one gets a different color (Orange, Magenta, Yellow, Blue, Green, or White).
+
+**The Floating Label (The "Stroke" Hack):**
+
+  Hovering just above the center of the bounding box will be a large, bold label. Because of your 8-way offset hack, the text will have a thick black outline around it, making it perfectly readable even if the background behind it is bright or messy.
+
+**Standard Tag: Tag [ID]**
+
+  Duplicate Tags (e.g., holding up two tags with ID "5"): Tag 5 (A) and Tag 5 (B)
+
+**The Bottom Banner (Summary Bar):**
+
+  Hovering at the bottom center, there is a light grey text box with dark blue text. It lists the raw IDs of everything currently in frame:
+
+**Detected IDs: [ID Number]**
