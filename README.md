@@ -47,4 +47,4 @@ main_detector_script
 
 Developed as an internship project.
 
-Based on the [AprilTag robotics visual fiducial system](https://april.eecs.umich.edu/software/apriltag)).
+Based on the [AprilTag robotics visual fiducial system](https://april.eecs.umich.edu/software/apriltag).
