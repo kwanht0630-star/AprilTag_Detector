@@ -117,9 +117,10 @@ If the camera is bumped or moved significantly to a new angle, the red 3D grid r
 ### The Red Grid looks completely shattered or wildly stretched
 You placed Tag 13 sideways during the 5-second calibration phase. The math assumes the camera is tilted sideways. Restart the script and ensure the bottom of Tag 13 faces the White pieces.
 
-### Edge pieces are showing up in the wrong squares
+### Edge pieces are showing up in the wrong squares or disappeared
 This is a **Parallax Error** caused by the camera angle and the height of your physical pieces. 
 * **Fix:** Open the script and find `parallaxCorrection = 0.15;` (around Line 11). Increase this to `0.20` or `0.25` to pull the mathematical tracking point closer to the base of the piece.
+Ideally, the camera should place on top of the whole system.
 
 ### The script crashes on startup saying "Webcam not found"
 Run `webcamlist` in your MATLAB command window to see the exact string name your operating system is using for your camera. Update the `cam = webcam('YOUR_CAMERA_NAME');` line in the script with that exact text.
